@@ -39,11 +39,9 @@
 	local categories = disp.node_childs(tree)
 %>
                 </div>
-                <footer class="mobile-hide">
+                <footer class="mobile-hide" style="text-align:center">
 
-		<a class="luci-link" href="https://github.com/openwrt/luci">Powered by <%= ver.luciname %>
-			(<%= ver.luciversion %>)</a> /
-		<a href="https://github.com/sirpdboy/luci-theme-opentopd">OpentopdTheme <%# vPKG_VERSION %></a> /
+		
 		<%= ver.distversion %>
                     <% if #categories > 1 then %>
                     <ul class="breadcrumb pull-right" id="modemenu">
