@@ -19,7 +19,7 @@ define Package/luci-app-argon-config
 	SUBMENU:=3. Applications
 	TITLE:=LuCI page for Argon Config
 	PKGARCH:=all
-	DEPENDS:=
+	DEPENDS:=+luci-compat
 endef
 
 define Build/Prepare
