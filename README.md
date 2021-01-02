@@ -51,6 +51,7 @@
 
 - luci-app-dockerman 和 luci-app-docker 不能同时编译，同时编译会失败
 - 编译luci-app-dockerman或者luci-app-docker，首先要在Global build settings ---> Enable IPv6 support in packages (NEW)（选上）
+- luci-app-wrtbwmon 和 luci-app-wrtbwmon-zhcn 同时存在时，要选择luci-app-wrtbwmon-zhcn ，不能选luci-app-wrtbwmon，也不能同时选两个
 #
 ##### 写入emmc方法
 - 1、编译完成之后解压出.img文件，使用【balenaEtcher】把镜像写入U盘在盒子上启动，之后用固件里的ttyd（命令窗）或者SSH执行 n1-install 命令，即可把固件安装到 emmc
